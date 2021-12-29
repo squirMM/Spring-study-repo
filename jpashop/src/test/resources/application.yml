@@ -1,0 +1,23 @@
+#이렇게 YML이 있으면 얘가 우선순위를 가져
+
+spring:
+#  datasource:
+#    #inMemory모드로 돌리는거임
+#    url: jdbc:h2:mem:test
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+#
+#  jpa:
+#    hibernate:
+#      # 만든걸 완전히 Drop시켜서 깨끗하게 만들어 주는거
+#      ddl-auto: create-drop
+#  properties:
+#    hibernate:
+#      format_sql: true
+  #이렇게 다 주석해놓으면 걍 알아서 스프링 부트가 in_memory 모드로 돌려
+
+  logging.level:
+    org.hibernate.SQL: debug
+    org.hiberanate.type: trace
+
